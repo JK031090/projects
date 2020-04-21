@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Musix::Sign Up</title>
+        <link rel="stylesheet" type = "text/css" href= "{{ url_for('static', filename = 'css/style.css') }}" >
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2 class="header-main">Sign Up</h2>
+
+            </div>
+
+            <div class="content">
+                <form class="loginform" name="signup"  method="POST">
+                    <div class="btn0">
+                        <input class="btn-def" placeholder="First Name" type="text" name="fname">            
+                    </div>
+                    <div class="btn0">
+                        <input class="btn-def" placeholder="Last Name" type="text" name="lname">            
+                    </div>
+                    <div class="btn0">
+                        <input class="btn-def" placeholder="E-mail" type="email" name="mail">            
+                    </div>
+                    <div class="btn0">
+                        <input class="btn-def" placeholder="Password" type="password" name="pass">
+                    </div>
+                    <div class="btn1">
+                        <input class="btn-lg" type="submit" value="Sign Up">
+                    </div>
+                    
+                
+                </form>
+                
+            </div>
+
+            <div class="signup">
+                <h5 class="su-main">Already A Member? <a href="/">Click Here To Sign In</a></h5>
+
+            </div>
+
+            <div class="footer">
+                <h6 class="ftr-main">&copy; 2020 Jitesh Krishna</h6>
+            </div>
+        </div>
+
+    </body>
+</html>

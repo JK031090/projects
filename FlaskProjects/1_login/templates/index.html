@@ -1,63 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to My First Flask</title>
-        <link rel="stylesheet" href= "/static/style.css" >
+        <title>Musix::Login</title>
+        <link rel="stylesheet" type = "text/css" href= "{{ url_for('static', filename = 'css/style.css') }}" >
 
     </head>
 
     <body>
         <div class="container">
             <div class="header">
-                <h3>Welcome to XYZ!</h3>
+                <h2 class="header-main">Welcome to XYZA!</h2>
 
             </div>
 
             <div class="content">
                 <form class="loginform" name="login" action="." method="POST">
-                    <table class="tbl">
-                        <tr>
-                            <th>
-                                <td>
-                                    <label>Username:</label>
-                                </td>
-                            </th>
-                            <th>
-                                <td>
-                                    <input type="text" name="uname">
-
-                                </td>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <td>
-                                    <label>Password:</label>
-                                </td>
-                            </th>
-                            <th>
-                                <td>
-                                    <input type="password" name="pass">
-
-                                </td>
-                            </th>
-                        </tr>
-                    </table>
-
-                    <input class="btn1" type="submit" value="Login">
+                    <div class="btn0">
+                        <input class="btn-def" placeholder="E-mail" type="email" name="uname">            
+                    </div>
+                    <div class="btn0">
+                        <input class="btn-def" placeholder="Password" type="password" name="pass">
+                    </div>
+                    <div class="btn1">
+                        <input class="btn-lg" type="submit" value="Login">
+                    </div>
+                    
                 
                 </form>
                 
             </div>
 
             <div class="signup">
-                <h5>Not A Member? <a href="#">Sign Up</a></h5>
+                <h5 class="su-main">Not A Member? <a href="/signup">Click Here To Sign Up</a></h5>
 
             </div>
 
             <div class="footer">
-                <h6>&copy; 2020 Jitesh Krishna</h6>
+                <h6 class="ftr-main">&copy; 2020 Jitesh Krishna</h6>
             </div>
         </div>
 
